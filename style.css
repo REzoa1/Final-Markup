@@ -466,7 +466,7 @@ p {
     .content__descr--shown {
       height: auto !important; }
   .content__slide {
-    margin: 24px 16px 0px; }
+    margin: 24px 16px 16px; }
     @media (min-width: 768px) {
       .content__slide {
         margin: 32px 24px;
