@@ -1,0 +1,46 @@
+/* ================================== Header     ==================================*/
+.header {
+  height: 88px;
+  width: 100%;
+  background-color: $white;
+  border-bottom: 1px solid $border-color;
+  position: fixed;
+  z-index: 2;
+
+  @media (min-width: $screen-lg) {
+    background-color: transparent;
+    position: absolute;
+    border-bottom: none;
+  }
+
+  &__inner {
+    margin: 18px 16px;
+
+    @media (min-width: $screen-md) {
+      margin: 18px 22px;
+    }
+
+    @media (min-width: $screen-lg) {
+      margin: 30px 22px;
+    }
+  }
+
+  &__left,
+  &__right {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  &__left {
+    @media (min-width: $screen-lg) {
+      display: none;
+    }
+  }
+
+  &__right {
+    justify-content: flex-end;
+  }
+}

@@ -1,0 +1,160 @@
+/* ================================== Prices     ==================================*/
+.prices {
+  font-size: 14px;
+
+  .card {
+    align-items: stretch;
+  }
+
+  @media (min-width: $screen-md) {
+    .swiper-wrapper {
+      flex-direction: column;
+      padding: 0 16px;
+      padding-bottom: 0;
+      background-color: $white;
+      border-radius: 6px;
+    }
+
+    .swiper-slide {
+      margin: 0;
+      &:last-child .card {
+        border: 0;
+      }
+    }
+
+    .card {
+      min-height: 100%;
+      width: auto;
+      display: flex !important;
+      justify-content: space-between;
+      align-items: center;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-radius: 0;
+    }
+  }
+
+  &__header {
+    display: none;
+    align-items: center;
+    background-color: transparent;
+    padding: 0 16px 16px;
+    color: #7e7e82;
+    font-weight: 500;
+
+    @media (min-width: $screen-md) {
+      display: flex;
+    }
+  }
+
+  &__price {
+    @media (min-width: $screen-md) {
+      flex-basis: 15%;
+    }
+  }
+
+  &__name {
+    @media (min-width: $screen-md) {
+      flex-basis: 55%;
+      padding-right: 5px;
+      padding-bottom: 4px;
+    }
+
+    @media (min-width: $screen-lg) {
+      flex-basis: 60%;
+    }
+  }
+
+  &__wrap {
+    display: flex;
+    align-content: center;
+
+    @media (min-width: $screen-md) {
+      align-items: center;
+      flex-basis: 30%;
+    }
+
+    @media (min-width: $screen-lg) {
+      flex-basis: 25%;
+    }
+  }
+
+  &__title {
+    color: #7e7e82;
+
+    @media (min-width: $screen-md) {
+      display: none;
+    }
+  }
+
+  &__subtitle {
+    padding-bottom: 16px;
+
+    @media (min-width: $screen-md) {
+      padding-bottom: 0;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+
+    &:hover {
+      .prices__link-text {
+        color: #7e7e82;
+      }
+      .prices__dropdown {
+        fill: #41f6d7;
+      }
+    }
+  }
+
+  &__link-text {
+    color: #1b1c21;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  &__dropdown {
+    vertical-align: middle;
+    height: 15px;
+    margin-left: 10px;
+    width: 8px;
+    fill: #ff3e79;
+  }
+
+  &__footer {
+    padding: 16px;
+    text-align: left;
+    padding-bottom: 40px;
+    width: 100%;
+
+    @media (min-width: $screen-md) {
+      padding: 24px 24px 50px;
+      width: 60%;
+    }
+
+    @media (min-width: $screen-lg) {
+      padding: 10px 34px 50px;
+      width: 50%;
+    }
+  }
+
+  &__footer-text {
+    line-height: 20px;
+    margin-bottom: 10px;
+  }
+}
+
+.prices .card {
+  padding: 16px;
+  text-align: left;
+  font-size: 14px;
+  color: #1b1c21;
+
+  @media (min-width: $screen-md) {
+    padding: 15px 0;
+    flex-direction: row;
+  }
+}

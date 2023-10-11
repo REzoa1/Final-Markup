@@ -1,0 +1,33 @@
+/* ================================== Slide Menu ==================================*/
+.slide-menu {
+  white-space: nowrap;
+  overflow: auto;
+  display: flex;
+
+  @media (min-width: $screen-lg) {
+    flex-wrap: wrap;
+  }
+
+  &::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+  }
+
+  &__item {
+    padding: 8px 15px;
+    border: 2px solid transparent;
+    background-color: transparent;
+    border-radius: 6px;
+    color: #7e7e82;
+    text-decoration: none;
+
+    &:hover {
+      color: #1b1c21;
+    }
+
+    &--active {
+      border-color: #b8ffec;
+      background-color: $white;
+    }
+  }
+}

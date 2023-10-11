@@ -1,0 +1,121 @@
+/* ================================== Content    ==================================*/
+.content {
+  background-color: $color-main;
+
+  @media (min-width: $screen-lg) {
+    width: calc(100% - 320px);
+
+    margin-left: auto;
+  }
+
+  &__wrap {
+    @media (min-width: $screen-md) {
+      display: flex;
+    }
+  }
+
+  &__inner {
+    margin: 0 16px;
+
+    @media (min-width: $screen-md) {
+      margin: 0 24px;
+      margin-right: 48px;
+    }
+
+    @media (min-width: $screen-lg) {
+      margin: 0 34px;
+    }
+  }
+
+  &__title {
+    padding-top: 88px + 24px;
+    position: relative;
+
+    @media (min-width: $screen-md) {
+      padding-left: 24px;
+    }
+
+    @media (min-width: $screen-lg) {
+      padding-left: 34px;
+      padding-top: 30px;
+    }
+  }
+
+  &__descr {
+    margin-bottom: 5px;
+    margin-left: 0;
+    height: 105px;
+    overflow: hidden;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    line-height: 18px;
+    text-overflow: ellipsis;
+
+    @media (min-width: $screen-md) {
+      height: 135px;
+    }
+
+    @media (min-width: $screen-lg) {
+      height: 160px;
+    }
+
+    &--shown {
+      height: auto !important;
+    }
+  }
+
+  &__slide {
+    margin: 24px 16px 0px;
+
+    @extend %fade-right;
+
+    @media (min-width: $screen-md) {
+      margin: 32px 24px;
+
+      mask-image: none;
+      -webkit-mask-image: none;
+    }
+
+    @media (min-width: $screen-lg) {
+      margin: 32px 34px;
+    }
+  }
+
+  &__img {
+    margin-top: 16px;
+    height: 176px;
+    height: 100%;
+
+    @media (min-width: $screen-md) {
+      display: inline;
+      margin: 0;
+      margin-right: 24px;
+    }
+  }
+
+  &__swiper {
+    margin-left: 16px;
+    margin-top: 16px;
+
+    @media (min-width: $screen-md) {
+      margin: 24px 24px 12px;
+    }
+
+    @media (min-width: $screen-lg) {
+      margin: 24px 34px;
+    }
+  }
+
+  &__readmore {
+    display: none;
+
+    @media (min-width: $screen-md) {
+      display: block;
+      margin-left: 24px;
+    }
+
+    @media (min-width: $screen-lg) {
+      margin-left: 34px;
+    }
+  }
+}

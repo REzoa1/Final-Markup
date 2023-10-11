@@ -1,0 +1,39 @@
+/* ================================== Title      ==================================*/
+.title {
+  font-size: 13.5px;
+  padding-left: 16px;
+
+  &:before {
+    @extend %mark;
+  }
+
+  &__text {
+    margin: 0;
+    line-height: 40px;
+  }
+}
+
+/* ================================== Main Title ==================================*/
+.main-title {
+  padding: 16px;
+  margin: 0;
+  margin-top: 14px;
+
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #7e7e82;
+
+  background-image: linear-gradient(to right, $color-main, $white);
+  border-top: 1px solid $border-color;
+
+  @media (min-width: $screen-md) {
+    padding: 16px 24px;
+    margin-top: 24px;
+  }
+
+  @media (min-width: $screen-lg) {
+    padding: 16px 34px;
+  }
+}

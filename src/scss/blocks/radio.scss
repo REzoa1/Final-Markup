@@ -1,0 +1,26 @@
+/* ================================== Radio      ==================================*/
+.radio {
+  margin-right: 7px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover {
+    color: #7e7e82;
+  }
+
+  &__text {
+    cursor: pointer;
+    font-weight: 500;
+  }
+
+  &__input {
+    appearance: none;
+    position: absolute;
+
+    &:checked + .radio__text {
+      color: #7e7e82;
+    }
+  }
+}

@@ -1,0 +1,119 @@
+/* ================================== Navigation ==================================*/
+.nav {
+  display: flex;
+
+  &:focus {
+    outline-color: #784ba0;
+  }
+
+  &__item {
+    display: inline-block;
+    position: relative;
+    height: 40px;
+    width: 40px;
+
+    margin-right: 16px;
+    text-align: center;
+
+    border-radius: 50%;
+    background-color: #ff3e79;
+    background-position: 100% 0%;
+    background-size: 400% 400%;
+
+    transition: all 0.15s ease-in-out;
+
+    @media (min-width: $screen-lg) {
+      &--close {
+        display: none;
+      }
+    }
+
+    &:last-child {
+      margin-right: 0px;
+    }
+
+    &:hover {
+      @extend %gradient-btn;
+    }
+
+    &--position--right {
+      margin-left: auto;
+    }
+  }
+
+  &__wrap {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+
+    margin-right: 16px;
+
+    &:hover {
+      .nav__item {
+        @extend %gradient-btn;
+      }
+      .nav__text {
+        color: #2b86c5;
+      }
+    }
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+
+  &__logo {
+    position: relative;
+    height: 52px;
+
+    @media (min-width: $screen-md) {
+      margin-left: 24px;
+
+      &:after {
+        left: -20px;
+        right: auto;
+      }
+    }
+
+    &:after {
+      @extend %divider;
+    }
+  }
+
+  &__svg {
+    fill: $white;
+    height: inherit;
+    width: 20px;
+  }
+
+  .header__right > &__item:nth-child(-n + 3) {
+    display: none;
+
+    @media (min-width: $screen-md) {
+      display: inline-block;
+    }
+
+    @media (min-width: $screen-lg) {
+      display: none;
+    }
+  }
+
+  .header__right > &__item:nth-child(3) {
+    margin-right: 40px;
+    &:after {
+      @extend %divider;
+      right: -20px;
+    }
+  }
+
+  &__text {
+    display: none;
+
+    @media (min-width: $screen-lg) {
+      display: inline;
+      font-weight: 500;
+
+      color: #1b1c21;
+      margin-right: 8px;
+    }
+  }
+}

@@ -1,0 +1,66 @@
+/* ================================== Btn        ==================================*/
+.btn {
+  line-height: 36px;
+  margin-left: auto;
+
+  height: 40px;
+  width: 40px;
+
+  border-radius: 50%;
+  background-color: $white;
+  border: 2px solid #ff3e79;
+
+  &:hover {
+    background-color: #ff3e79;
+    .btn__icon {
+      fill: $white;
+    }
+  }
+
+  &__icon {
+    fill: #ff3e79;
+    height: 12px;
+    width: 8px;
+
+    transition: all 0.2s ease-in;
+  }
+
+  &__text {
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+
+    padding-right: 8px;
+  }
+
+  &--long {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    line-height: 32px;
+    padding: 0 10px;
+
+    height: 32px;
+    width: 119px;
+
+    border-radius: 16px;
+    background-color: #ff3e79;
+    border: none;
+
+    background-position: 100%;
+    background-size: 400% 400%;
+
+    transition: all 0.15s ease-in-out;
+
+    &:hover {
+      @extend %gradient-btn;
+    }
+
+    .btn__icon {
+      fill: white;
+      height: 11px;
+      width: 7px;
+    }
+  }
+}

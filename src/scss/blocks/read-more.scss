@@ -1,0 +1,21 @@
+/* ================================== Read More   ==================================*/
+.read-more {
+  position: relative;
+  padding: 5px;
+  height: 24px;
+
+  &::before {
+    @extend %read-more-icon;
+  }
+
+  &__text {
+    padding-left: 8px + 19px;
+    font-weight: 500;
+  }
+
+  &--shown {
+    &::before {
+      transform: rotate(180deg);
+    }
+  }
+}

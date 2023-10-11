@@ -1,0 +1,59 @@
+/* ================================== !!!Swiper  ==================================*/
+.swiper {
+  @extend %fade-right;
+
+  @media (min-width: $screen-md) {
+    mask-image: none;
+    max-width: 900px;
+    -webkit-mask-image: none;
+  }
+
+  @media (min-width: $screen-lg) {
+    max-width: 100%;
+  }
+
+  &--large {
+    .card {
+      min-height: 200px;
+    }
+
+    .btn {
+      margin-top: auto;
+    }
+  }
+}
+
+.swiper-wrapper {
+  padding-bottom: 36px;
+  width: auto;
+
+  @media (min-width: $screen-md) {
+    padding-bottom: 0;
+    flex-wrap: wrap;
+  }
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+  background: #dddddd;
+
+  @media (min-width: $screen-md) {
+    display: none;
+  }
+}
+
+.swiper-pagination-bullet-active {
+  background: #b5b6bc;
+}
+
+.swiper-slide {
+  text-align: center;
+  width: auto;
+
+  @media (min-width: $screen-md) {
+    margin-bottom: 16px;
+    margin-right: 16px;
+  }
+}

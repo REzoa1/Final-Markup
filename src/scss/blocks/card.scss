@@ -1,0 +1,60 @@
+/* ================================== Card       ==================================*/
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  width: 260px;
+  padding: 16px;
+
+  border: 1px solid #eaeaea;
+  border-radius: 6px;
+
+  background: $white 16px 50% no-repeat;
+  box-sizing: border-box;
+
+  @media (min-width: $screen-md) {
+    width: 224px;
+  }
+
+  &__text {
+    font-size: 16px;
+    font-weight: 500;
+    color: #1b1c21;
+  }
+
+  &--label {
+    &--lenovo {
+      background-image: url('../img/brands/lenovo.png');
+    }
+
+    &--samsung {
+      background-image: url('../img/brands/samsung.png');
+    }
+
+    &--apple {
+      background-image: url('../img/brands/apple.png');
+    }
+
+    &--bosh {
+      background-image: url('../img/brands/bosh.png');
+    }
+
+    &--hp {
+      background-image: url('../img/brands/hp.png');
+    }
+
+    &--acer {
+      background-image: url('../img/brands/acer.png');
+    }
+
+    &--view-sonic {
+      background-image: url('../img/brands/view_sonic.png');
+    }
+
+    &--sony {
+      background-image: url('../img/brands/sony.png');
+    }
+  }
+}

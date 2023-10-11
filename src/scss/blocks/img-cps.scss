@@ -1,0 +1,16 @@
+/* ================================== Img CPS     ==================================*/
+.img-cps {
+  width: 100%;
+  object-fit: cover;
+
+  @media (min-width: $screen-md) {
+    width: 360px;
+    height: 208px;
+    border-radius: 6px;
+  }
+
+  @media (min-width: $screen-lg) {
+    width: 530px;
+    height: 307px;
+  }
+}
