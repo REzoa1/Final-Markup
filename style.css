@@ -513,6 +513,8 @@ p {
   z-index: 2; }
   @media (min-width: 1366px) {
     .header {
+      right: 0;
+      width: auto;
       background-color: transparent;
       position: absolute;
       border-bottom: none; } }
