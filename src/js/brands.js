@@ -4,7 +4,7 @@ const brandsBtn = brands.querySelector('.read-more')
 
 let isShowAll = false
 
-const showElements = (arr) => arr.forEach((el) => el.classList.remove('hidden'))
+const showElements = arr => arr.forEach((el) => el.classList.remove('hidden'))
 
 const hideFrom = (num, arr) => {
   showElements(arr)

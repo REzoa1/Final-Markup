@@ -8,6 +8,9 @@
   z-index: 2;
 
   @media (min-width: $screen-lg) {
+    right: 0;
+    width: auto;
+
     background-color: transparent;
     position: absolute;
     border-bottom: none;
